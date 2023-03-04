@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Poppins:wght@300;600&display=swap');
+
+/*ROOT PART*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  background: url("image/background-walp.jpg");
+}
+
+/*-------------------------*/
+
+/*HEADER & NAVIGATION MENU*/
+header {
+  background-color: transparent;
+  padding: 2em;
+  margin: 0 ;
+  color: white;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*-------------------------*/
+
+/*logo*/
+.logo {
+  width: 80px;
+}
+
+/*-------------------------*/
+
+/*home, about, more*/
+ul {
+  display: flex;
+  list-style: none;
+  gap: .8rem;
+  align-items: center;
+}
+
+/*-------------------------*/
+
+
+/*MAIN CHART*/
+/*main w/tables*/
+main {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3em;
+}
+
+/*-------------------------*/
+
+/*Content + Hours*/
+.p-space-bet {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------------------------*/
+
+/*buy button space to down*/
+section :nth-child(7) {
+  margin-left: 70px;
+}
+
+/*-------------------------*/
+
+/*PRICE CHART*/
+/*default price table*/
+.price-1,
+.price-2,
+.price-3 {
+  background: white;
+  width: 300px;
+  height: 350px;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+/*-------------------------*/
+
+/*hover in all prices tables*/
+.price-1:hover,
+.price-2:hover,
+.price-3:hover {
+  transition: all 0.5s;
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+/*-------------------------*/
+
+/*<p> things in trial version etc..*/
+.price-1 :nth-child(3),
+.price-2 :nth-child(3),
+.price-3 :nth-child(3) {
+  font-size: 18px;
+  color: #807c7c;
+  padding: 5px;
+}
+
+/*-------------------------*/
+
+
+/*<h1> red color in free, business & premium*/
+.price-1 :nth-child(1),
+.price-2 :nth-child(1),
+.price-3 :nth-child(1) {
+  color: #CC1500;
+}
+
+/*-------------------------*/
+
+
+
+/*BUTTONS*/
+/*contact button*/
+.button {
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-weight: 700;
+  border: 1px solid #CC1500;
+  color: white;
+  background-color: #CC1500;
+}
+
+/*-------------------------*/
+
+/*buy button*/
+.button-buy {
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: 700;
+  width: 100px;
+  background-color: #CC1500;
+  color: white;
+  border: 1px solid #CC1500;
+  margin-top: 50px;
+}
+
+/*-------------------------*/
+
+/*HOVER BUTTONS*/
+/*contact button hover*/
+li:hover,
+.button:hover {
+  color: #CC1500;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: black;
+}
+
+/*-------------------------*/
+
+/*buy button hover*/
+.button-buy:hover {
+  background-color: black;
+  color: #CC1500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/*-------------------------*/
+
+.start {
+  color: white;
+  gap: 3em;
+  text-align: center;
+  align-items: center;
+}
+
+.checkbox-wrapper-22 {
+  text-align: center;
+  align-items: center;
+}
+
+/*CHECKBOX*/
+.checkbox-wrapper-22 .switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 40px;
+}
+
+.checkbox-wrapper-22 .switch input {
+  display:none;
+}
+
+.checkbox-wrapper-22 .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.checkbox-wrapper-22 .slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 17px;
+}
+
+.checkbox-wrapper-22 input:checked + .slider {
+  background-color: #bb4242;
+}
+
+.checkbox-wrapper-22 input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+  border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+  border-radius: 50%;
+}
